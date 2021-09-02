@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Michael Wright",
+      "dateCreated": 1630601178083,
+      "email": "mike@nss.pizza"
+    },
+    {
+      "fullName": "Guest",
+      "dateCreated": 1630601178083,
+      "email": "no-reply@nss.pizza",
+      "id": 2
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "moodName": "Awesome",
+      "moodImage": "mood-nailed-it-icon.png"
+    },
+    {
+      "moodName": "Good",
+      "moodImage": "mood-good-icon.png",
+      "id": 2
+    },
+    {
+      "moodName": "Meeeh",
+      "moodImage": "mood-meeeh-icon.png",
+      "id": 3
+    },
+    {
+      "moodName": "Terrible",
+      "moodImage": "mood-bad-icon.png",
+      "id": 4
+    }
+  ],
+  "entries": [
+    {
+      "id": 1,
+      "authorId": 1,
+      "dateCreated": 1630601178083,
+      "dateModified": 1630601178083,
+      "modifiedBy": 1,
+      "moodId": 1,
+      "subject": ""
+    },
+    {
+      "authorId": 1,
+      "dateCreated": 1630618339352,
+      "dateModified": 1630618339352,
+      "modifiedBy": 1,
+      "moodId": 2,
+      "subject": "GiffyGram: Application Data, Connect HTML & JS",
+      "message": "We got into APIs more today. Also, we learned about two more fancy ways to declare functions. I like the that there's a easy way to declare a single line function that does or doesn't pass an argument. \n I think that slash-n I just typed might drop to the next line. Probably won't though. We'll see what happens. The only reason I'm not feeling Awesome today and am only feeling Good is because I want to know how to automated the dateCreated values (or all date values really). We didn't cover that, so I might do some investigating on my own. Maybe -- but not before I catch up my Daily Journal the chapters",
+      "id": 2
+    }
+  ]
+}
