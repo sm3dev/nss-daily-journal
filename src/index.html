@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Journal || Michael Wright, C51</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="shortcut icon" href="images/SM3dev-angleBrackets-CRT-logo-wh-BG-favicon-1280px.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="shortcut icon" href="/images/SM3dev-angleBrackets-CRT-logo-wh-BG-favicon-1280px.png" type="image/x-icon">
 </head>
 <body>
     <header class="header">
-        <section class="header-logo__block"><div><img src="images/SM3dev-angleBrackets-CRT-logo-wh-BG-favicon-1280px.png" alt="" class="header__logo"></div></section>
+        <section class="header-logo__block"><div class="header-logo__block"><img src="/images/SM3dev-angleBrackets-CRT-logo-wh-BG-favicon-1280px.png" alt="SM3Dev website logo" class="header__logo"></div></section>
         <section class="header-page-title__block">
             <h1 class="page-title">Daily Journal</h1>
             <p class="page__tagline">Michael P. Wright, C51</p>
@@ -23,7 +23,43 @@
             <section class="new-entry-form__block">
                 <h2 class="new-post__title">New Daily Journal</h2>
                 <form action="" method="post">
-
+                    <fieldset>
+                        <legend>Tell me how you feel about it:</legend>
+                        <section class="mood-selector__block">
+                            <div class="mood__selection">
+                                <input type="radio" name="mood" id="mood1" value="awesome">
+                                <label for="mood1">
+                                    <span id="mood1__image" class="mood-select-icon__block">
+                                        <img class="mood-select-icon icon" src="images/mood-nailed-it-icon.png" alt="Awesome mood-choice__text"></span>
+                                    <span class="mood-choice__text">Awesome</span>
+                                </label>
+                            </div>
+                            <div class="mood__selection">
+                                <input type="radio" name="mood" id="mood2" value="good">
+                                <label for="mood2">
+                                    <span id="mood2__image" class="mood-select-icon__block">
+                                        <img class="mood-select-icon icon" src="images/mood-good-icon.png" alt="Good mood-choice__text"></span>
+                                    <span class="mood-choice__text">Good</span>
+                                </label>
+                            </div>
+                            <div class="mood__selection">
+                                <input type="radio" name="mood" id="mood3" value="meeeh">
+                                <label for="mood3">
+                                    <span id="mood3__image" class="mood-select-icon__block">
+                                        <img class="mood-select-icon icon" src="images/mood-meeeh-icon.png" alt="Meeeh mood-choice__text"></span>
+                                    <span class="mood-choice__text">Meeeh</span>
+                                </label>
+                            </div>
+                            <div class="mood__selection">
+                                <input type="radio" name="mood" id="mood4" value="bad">
+                                <label for="mood4">
+                                    <span id="mood4__image" class="mood-select-icon__block">
+                                        <img class="mood-select-icon icon" src="images/mood-bad-icon.png" alt="Bad mood-choice__text"></span>
+                                    <span class="mood-choice__text">Bad</span>
+                                </label>
+                            </div>        
+                        </section>
+                    </fieldset>
                     <label for=""></label>
                     <fieldset>
                         <label for="newJournalDate">Date of Entry</label>
@@ -37,7 +73,27 @@
                     Previous Entry
                     </button>
                 </div>
-                <form action="" method="get"></form>
+                <section class="view-selected-entry__block">
+                    <article class="entry__card">
+                        <section class="entry__header">
+                            <section class="mood-date__container">
+                                <div class="mood-icon__block"><img src="/images/mood-good-icon.png" alt="Good" class="entry-mood__icon icon"></div>
+                                <section class="entry__date">9.2.2021</section>
+                            </section>
+                            <section class="entry-subject__block">
+                                <h4 class="entry-subject__text">GiffyGram: Application Data</h4>
+                            </section>
+                        </section>
+                        <section class="entry__body">
+                                <p class="entry__message">We got into APIs more today. Also, we learned about two more fancy ways to declare functions. I like the that there's a easy way to declare a single line function that does or doesn't pass an argument. \n I think that slash-n I just typed might drop to the next line. Probably won't though. We'll see what happens. The only reason I'm not feeling Awesome today and am only feeling Good is because I want to know how to automated the dateCreated values (or all date values really). We didn't cover that, so I might do some investigating on my own. Maybe -- but not before I catch up my Daily Journal the chapters.</p>
+                                <section class="entry-time__block"><p class="entry-time__time text--italics">3:29 PM CST</p></section>
+                        </section>
+                        <section class="entry__footer">
+                            <section class="entry-author__block"><p class="entry__author">By: Michael Wright</p></section>
+                            <section class="entry-modified__block"><p class="entry-modified__date">Modified Last: 9.2.2021</p></section>
+                        </section>
+                    </article>
+                </section>
                 <div class="view-next__block">
                     <button class="view-next__button">
                     Next Entry
@@ -46,8 +102,28 @@
             </section>
         </section>
 
-        <section class="journal-list__container">
-
+        <section class="journal-entry__container">
+            <article class="entry__card">
+                <button class="entry__header accordion">
+                    <section class="mood-date__container">
+                        <div class="mood-icon__block"><img src="/images/mood-good-icon.png" alt="Good" class="entry-mood__icon"></div>
+                        <section class="entry__date">9.2.2021</section>
+                    </section>
+                    <section class="entry-subject__block">
+                        <h4 class="entry-subject__text">GiffyGram: Application Data</h4>
+                    </section>
+                </button>
+                <section class="accordion__panel">
+                    <section class="entry__body">
+                        <p class="entry__message">We got into APIs more today. Also, we learned about two more fancy ways to declare functions. I like the that there's a easy way to declare a single line function that does or doesn't pass an argument. \n I think that slash-n I just typed might drop to the next line. Probably won't though. We'll see what happens. The only reason I'm not feeling Awesome today and am only feeling Good is because I want to know how to automated the dateCreated values (or all date values really). We didn't cover that, so I might do some investigating on my own. Maybe -- but not before I catch up my Daily Journal the chapters.</p>
+                        <section class="entry-time__block"><p class="entry-time__time text--italics">3:29 PM CST</p></section>
+                    </section>
+                    <section class="entry__footer">
+                        <section class="entry-author__block"><p class="entry__author">By: Michael Wright</p></section>
+                        <section class="entry-modified__block"><p class="entry-modified__date">Modified Last: 9.2.2021</p></section>
+                    </section>
+                </section>
+            </article>
         </section>
 
     </main>
@@ -57,7 +133,8 @@
             <p class="copyright__text">&copy; 2021 Michael P. Wright</p>
         </section>
         <section class="footer-logo__block">
-            <div><a href="https://github.com/sm3dev" class="external-link" title="Visit Michael Wright's Github"><img src="images/github-icon.png" alt="Github icon" class="github-icon__logo">github</a>
+            <div><a href="https://github.com/sm3dev" class="external-link" title="Visit Michael Wright's Github">
+                <img src="images/github-icon.png" alt="Github icon" class="github-icon__logo icon">My GitHub</a>
             </div>
         </section>
     </footer>

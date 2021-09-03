@@ -1,0 +1,118 @@
+/* Root */
+:root {
+    --main-color: #084887;
+    --main-color-dark: #021427;
+    --main-color-light: #0D7AE7;
+    --accent-color: #FA7E61;
+    --primary-bg-color: #F7F5FB;
+    --secondary-bg-color: #909CC2;
+}
+
+/* HTML Element styles ***********************/
+body {
+    background-color: var(--primary-bg-color);
+    font-size: 16px;
+    color: var(--main-color-dark);
+}
+
+/* all images should fill 100% of their container */
+img {
+    width: 100%;
+}
+
+label {
+    cursor: pointer;
+}
+
+/* Header ***********************************/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    padding: 1rem;
+}
+
+.header-logo__block {
+    width: 5rem;
+    margin-inline-end: 1rem;
+}
+
+.header__logo {
+    border-radius: 50px;
+}
+
+/* Main ***********************************/
+
+
+/* Section for New Entry and Reading an Entry */
+.entry-add-entry-read__block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex: 200px;
+}
+
+.new-entry-form__block {
+    flex: 1 400px;
+}
+
+.view-entry__block {
+    flex: 1 400px;
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+/* Mood Selector ***********************/
+#mood1__image {background-image: url("/src/images/mood-nailed-it-icon.png");}
+#mood2__image {background-image: url("/src/images/mood-good-icon.png");}
+#mood3__image {background-image: url("/src/images/mood-meeeh-icon.png");}
+#mood4__image {background-image: url("/src/images/mood-bad-icon.png");}
+
+/* This code makes the default radio button invisible. The icon have to be clicked to select a mood */
+input#mood1,
+input#mood2,
+input#mood3,
+input#mood4 {
+    visibility: hidden;
+    display: none;
+}
+
+.mood-icon__block {
+    display: inline-block !important;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    line-height: 0;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.mood-choice__text {
+    font-size: .75em;
+}
+
+.mood-selector__block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.mood__selection input:checked {
+    outline: var(--accent-color) 2px solid;
+}
+
+/* Miscellaneous  ********************/
+.icon {
+    max-width: 3em;
+}
