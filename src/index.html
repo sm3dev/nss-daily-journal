@@ -22,50 +22,51 @@
         <section class="entry-add-entry-read__block">
             <section class="new-entry-form__block">
                 <h2 class="new-post__title">New Daily Journal</h2>
-                <form action="" method="post">
+                <div action="" method="post">
                     <fieldset>
                         <legend>Tell me how you feel about it:</legend>
                         <section class="mood-selector__block">
-                            <div class="mood__selection">
-                                <input type="radio" name="mood" id="mood1" value="awesome">
+                            <div class="mood__selection selected">
+                                <input type="radio" name="mood" id="mood1" value="awesome" checked>
                                 <label for="mood1">
-                                    <span id="mood1__image" class="mood-select-icon__block">
-                                        <img class="mood-select-icon icon" src="images/mood-nailed-it-icon.png" alt="Awesome mood-choice__text"></span>
-                                    <span class="mood-choice__text">Awesome</span>
+                                    <img id="mood1__image" class="mood-select-icon icon" src="images/mood-nailed-it-icon.png" alt="Awesome mood-choice__text">
+                                    <p class="mood-choice__text">Awesome</p>
                                 </label>
                             </div>
                             <div class="mood__selection">
                                 <input type="radio" name="mood" id="mood2" value="good">
                                 <label for="mood2">
-                                    <span id="mood2__image" class="mood-select-icon__block">
-                                        <img class="mood-select-icon icon" src="images/mood-good-icon.png" alt="Good mood-choice__text"></span>
-                                    <span class="mood-choice__text">Good</span>
+                                    <img id="mood2__image" class="mood-select-icon icon" src="images/mood-good-icon.png" alt="Good mood-choice__text">
+                                    <p class="mood-choice__text">Good</p>
                                 </label>
                             </div>
                             <div class="mood__selection">
                                 <input type="radio" name="mood" id="mood3" value="meeeh">
                                 <label for="mood3">
-                                    <span id="mood3__image" class="mood-select-icon__block">
-                                        <img class="mood-select-icon icon" src="images/mood-meeeh-icon.png" alt="Meeeh mood-choice__text"></span>
-                                    <span class="mood-choice__text">Meeeh</span>
+                                    <img id="mood3__image" class="mood-select-icon icon" src="images/mood-meeeh-icon.png" alt="Meeeh mood-choice__text">
+                                    <p class="mood-choice__text">Meeeh</p>
                                 </label>
                             </div>
                             <div class="mood__selection">
                                 <input type="radio" name="mood" id="mood4" value="bad">
                                 <label for="mood4">
-                                    <span id="mood4__image" class="mood-select-icon__block">
-                                        <img class="mood-select-icon icon" src="images/mood-bad-icon.png" alt="Bad mood-choice__text"></span>
-                                    <span class="mood-choice__text">Bad</span>
+                                    <img id="mood4__image" class="mood-select-icon icon" src="images/mood-bad-icon.png" alt="Bad mood-choice__text">
+                                    <p class="mood-choice__text">Bad</p>
                                 </label>
                             </div>        
                         </section>
                     </fieldset>
-                    <label for=""></label>
+                    
                     <fieldset>
                         <label for="newJournalDate">Date of Entry</label>
                         <input type="date" name="newJournalDate" id="newJournalDate">
                     </fieldset>
-                </form>
+
+                    <fieldset>
+                        <div><input type="text" name="" id=""></div>
+                        <div class="remarks"><textarea name="" id="" cols="30" rows="10"></textarea></div>
+                    </fieldset>
+                </div>
             </section>
             <section class="view-entry__block">
                 <div class="view-previous__block">
@@ -139,5 +140,6 @@
         </section>
     </footer>
     
+    <script src="./scripts/main.js" type="module"></script>
 </body>
 </html>

@@ -1,7 +1,9 @@
-const getJournalEntries = () => {
-  return fetch("daily-journal.json")
-    .then((response) => response.json())
-    .then((parsedData) => {
-      console.log(parsedData);
-    });
-};
+
+const applicationElement = document.querySelector(".main");
+
+applicationElement.addEventListener("click", (event) => {
+  console.log("what was clicked", event.target);
+  if (event.target.id === "logout") {
+    console.log("You clicked on logout");
+  }
+});
