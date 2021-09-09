@@ -1,11 +1,19 @@
-// This is taken from giffy and has to be modified
+import { convertDate } from "../helpers.js";
+
+
 export const EntryCard = (entryObj) => {
-    return `
-      <section class="post">
-        <header>
-            <h2 class="post__title">${entryObj.title}</h2>
-        </header>
-        <img class="post__image" src="./src/images${entryObj.imageURL}" />
-      </section>
-    `
+
+    const covertedEntryDate = convertDate(entryObj.dateCreated);
+  
+    return `<article id="entry-card--${entryObj.id}" class="entry__card entry__preview">
+    <section class="entry__card mood-date__container">
+        <div class="entry__card mood-icon__block">
+            <img src="images/mood-good-icon.png" alt="${entryObj.moodName} icon" class="entry__card entry-mood__icon">
+        </div>
+        <div class="entry__card entry__date">${covertedEntryDate}</div>
+    </section>
+    <section class="entry__card entry-subject__block">
+        <h4 class="entry__card entry-subject__text">${entryObj.subject}</h4>
+    </section>
+</article>`
   }

@@ -65,6 +65,16 @@
       "subject": "Random User exercise",
       "message": "I feel like this was one of the exercises I've been waiting for. Up until now, we've been access lists of items and displaying them as lists. I've been looking forward to display only one item at a time because I have a personal project I want to build. For the last 2-3 years, I've been listing facts about myself in an Google Doc with the intent to use them on my website About page. \nThe idea is that a site visitor can click a button that displays a random fact about me from the list. Now, I know how to pull it off – in the DOM at least.",
       "id": 3
+    },
+    {
+      "authorId": 1,
+      "dateCreated": 1631159915184,
+      "dateModified": 1631159915184,
+      "modifiedBy": 1,
+      "moodId": 2,
+      "subject": "Creating the form that posts a post for GiffyGram",
+      "message": "I definitely spent too much time on the forms and html in general. I meant to go a few more hours after class to get my journal entry list displaying. I didn't even get to the JS lol. Wow. I doing a lot HTML and alot of CSS for the new entry form and the entry list cards. I feel confident that I can take the code from giffygram and modify it to work for the journal, but still, I didn't touch it tonight. This day was good but not awesome.",
+      "id": 4
     }
   ]
 }

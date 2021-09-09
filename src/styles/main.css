@@ -47,9 +47,6 @@ label {
 }
 
 /* Main ***********************************/
-
-
-/* Section for New Entry and Reading an Entry */
 .entry-add-entry-read__block {
     display: flex;
     flex-direction: row;
@@ -59,32 +56,13 @@ label {
     flex: 200px;
 }
 
+
+/* Section for New Entry **********************/
+
 .new-entry-form__block {
     flex: 1 320px;
 }
 
-.view-entry__block {
-    flex: 1 320px;
-    display: inline-flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-/* Mood Selector ***********************/
-/* #mood1__image {background-image: url("./src/images/mood-nailed-it-icon.png");}
-#mood2__image {background-image: url("./src/images/mood-good-icon.png");}
-#mood3__image {background-image: url("./src/images/mood-meeeh-icon.png");}
-#mood4__image {background-image: url("./src/images/mood-bad-icon.png");} */
-
-/* This code makes the default radio button invisible. The icon have to be clicked to select a mood */
-/* input#mood1,
-input#mood2,
-input#mood3,
-input#mood4 {
-    visibility: hidden;
-    display: none;
-} */
 
 .mood-icon__block {
     display: inline-block !important;
@@ -123,6 +101,20 @@ input#mood4 {
 .mood__selection input:checked,
 .mood__selection.selected {
     outline: var(--accent-color) 2px solid;
+    outline-style: auto;
+}
+
+/* Viewer Section, Post Entry *************************** */
+.view-entry__wrapper {
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+.view-entry__block {
+    flex: 1 320px;
 }
 
 /* Miscellaneous  ********************/
