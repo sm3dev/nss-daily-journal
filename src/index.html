@@ -22,104 +22,26 @@
         <section class="entry-add-entry-read__block">
             <!-- reference for responsive,full-width textarea input fields: https://css-tricks.com/auto-growing-inputs-textareas/ -->
             <section class="new-entry-form__block">
-                <h2 class="new-post-section__title">New Daily Journal</h2>
-                <section class="new-entry-form__wrapper">
-                    <div id="new-entry__form">
-                    <fieldset id="new-post__date-block">
-                        <label for="newJournalDate"><strong>Date of Entry: </strong></label>
-                        <input type="date" name="newJournalDate" id="newJournalDate">
-                    </fieldset>
-                    <fieldset>
-                        <legend>Mood</legend>
-                        <section class="mood-selector__block">
-                            <div class="mood__selection selected">
-                                <input type="radio" name="mood" id="mood1" value="awesome" checked>
-                                <label for="mood1">
-                                    <img id="mood1__image" class="mood-select-icon icon" src="images/mood-nailed-it-icon.png" alt="Awesome mood-choice__text">
-                                    <p class="mood-choice__text">Awesome</p>
-                                </label>
-                            </div>
-                            <div class="mood__selection">
-                                <input type="radio" name="mood" id="mood2" value="good">
-                                <label for="mood2">
-                                    <img id="mood2__image" class="mood-select-icon icon" src="images/mood-good-icon.png" alt="Good mood-choice__text">
-                                    <p class="mood-choice__text">Good</p>
-                                </label>
-                            </div>
-                            <div class="mood__selection">
-                                <input type="radio" name="mood" id="mood3" value="meeeh">
-                                <label for="mood3">
-                                    <img id="mood3__image" class="mood-select-icon icon" src="images/mood-meeeh-icon.png" alt="Meeeh mood-choice__text">
-                                    <p class="mood-choice__text">Meeeh</p>
-                                </label>
-                            </div>
-                            <div class="mood__selection">
-                                <input type="radio" name="mood" id="mood4" value="bad">
-                                <label for="mood4">
-                                    <img id="mood4__image" class="mood-select-icon icon" src="images/mood-bad-icon.png" alt="Bad mood-choice__text">
-                                    <p class="mood-choice__text">Bad</p>
-                                </label>
-                            </div>        
-                        </section>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Journal Text</legend>
-                        <p><strong>Subject:</strong><textarea class="textarea" id="post-subject"></textarea></p>
-                        <p class="remarks__block">
-                            <strong>Thoughts:</strong>
-                            <span class="textarea" role="textbox" name="post-message" id="post-message" contenteditable></span></p>
-                    </fieldset>
-                    <button id="submit-new-post__button" class="block-style__button" type="button">Save Journal Entry</button>
-                    </div>
-                </section>
                 
             </section>
             <section class="view-entry__block">
                 <h2 class="viewer-post-section__title">Journal Viewer</h2>
 
                 <section class="view-entry__wrapper">
-                    <div class="view-previous__block">
-                            <a href=""><button id="view-previous__button" class="navigate-entry-button">
-                                Previous
-                                </button></a>
-                    </div>
-                    <section class="viewer viewer-entry__block">
-                        <article class="viewer entry__card" id="viewer-entry--id">
-                            <section class="viewer entry__header">
-                                <section class="viewer mood-date__container">
-                                    <div class="viewer mood-icon__block"><img src="/images/mood-good-icon.png" alt="Good" class="entry-mood__icon icon"></div>
-                                    <section class="viewer entry__date">Created: 9.2.2021</section>
-                                </section>
-                                <section class="viewer entry-subject__block">
-                                    <h3 class="viewer entry-subject__text">GiffyGram: Application Data</h3>
-                                </section>
-                            </section>
-                            <section class="viewer entry__body">
-                                    <p class="viewer entry__message">We got into APIs more today. Also, we learned about two more fancy ways to declare functions. I like the that there's a easy way to declare a single line function that does or doesn't pass an argument. \n I think that slash-n I just typed might drop to the next line. Probably won't though. We'll see what happens. The only reason I'm not feeling Awesome today and am only feeling Good is because I want to know how to automated the dateCreated values (or all date values really). We didn't cover that, so I might do some investigating on my own. Maybe -- but not before I catch up my Daily Journal the chapters.</p>
-                            </section>
-                            <section class="viewer entry__footer">
-                                <section class="viewer entry-author__block"><p class="entry__author">By: Michael Wright</p></section>
-                                <section class="viewer entry-modified__block"><p class="entry-modified__date">Last Modified: 9.2.2021</p></section>
-                            </section>
-                        </article>
-                        <section class="viewer buttons__block">
-                            <button type="button" id="edit-entry__button" class="viewer block-style__button">Edit Entry</button>
-                            <button type="button" id="save-entry__button" class="viewer block-style__button" disabled>Save Changes</button>
-                            <button type="button" id="delete-entry__button" class="viewer block-style__button">Delete Entry</button>
-                        </section>
-                    </section>
-                    <div class="view-next__block">
-                        <a href=""><button id="view-next__button" class="navigate-entry-button">
-                        Next
-                        </button></a>
-                    </div>
+                    <!-- the post to be viewed will display here -->
+                    <p class="viewer preview-message__text">Please select a Journal Card below to read an Entry</p>
+ 
                 </section>
  
             </section>
         </section>
 
         <section class="journal-entry__container">
+            <h2 class="journal-entry__list-title">Journal Entries</h2>
+            <section class="journal-entry__wrapper">
+
+            </section>
+
             <!-- <article id="entry-card--id" class="entry__card entry__preview">
                     <section class="entry__card mood-date__container">
                         <div class="entry__card mood-icon__block">

@@ -7,7 +7,7 @@ import { convertDate } from "../helpers.js";
 export const entryViewer = (entryObj) => {
 
   return `<div class="view-previous__block">
-            <a href="${entryObj.id[-1]}">
+            <a href="#">
                 <button id="view-previous__button" class="navigate-entry-button">Previous</button></a>
         </div>
 <section class="viewer viewer-entry__block">
@@ -36,5 +36,5 @@ export const entryViewer = (entryObj) => {
 </section>
 </section>
 <div class="view-next__block">
-    <a href="${entryObj.id[-1]}"><button id="view-next__button" class="navigate-entry-button">Next</button></a></div>`;
+    <a href="#"><button id="view-next__button" class="navigate-entry-button">Next</button></a></div>`;
 };
