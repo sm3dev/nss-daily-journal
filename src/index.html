@@ -23,7 +23,8 @@
             <!-- reference for responsive,full-width textarea input fields: https://css-tricks.com/auto-growing-inputs-textareas/ -->
             <section class="new-entry-form__block">
                 <h2 class="new-post-section__title">New Daily Journal</h2>
-                <div id="new-entry__form">
+                <section class="new-entry-form__wrapper">
+                    <div id="new-entry__form">
                     <fieldset id="new-post__date-block">
                         <label for="newJournalDate"><strong>Date of Entry: </strong></label>
                         <input type="date" name="newJournalDate" id="newJournalDate">
@@ -70,16 +71,18 @@
                             <span class="textarea" role="textbox" name="post-message" id="post-message" contenteditable></span></p>
                     </fieldset>
                     <button id="submit-new-post__button" class="block-style__button" type="button">Save Journal Entry</button>
-                </div>
+                    </div>
+                </section>
+                
             </section>
             <section class="view-entry__block">
                 <h2 class="viewer-post-section__title">Journal Viewer</h2>
 
                 <section class="view-entry__wrapper">
                     <div class="view-previous__block">
-                            <button class="view-previous__button">
-                            Previous
-                            </button>
+                            <a href=""><button id="view-previous__button" class="navigate-entry-button">
+                                Previous
+                                </button></a>
                     </div>
                     <section class="viewer viewer-entry__block">
                         <article class="viewer entry__card" id="viewer-entry--id">
@@ -107,9 +110,9 @@
                         </section>
                     </section>
                     <div class="view-next__block">
-                        <button class="view-next__button">
+                        <a href=""><button id="view-next__button" class="navigate-entry-button">
                         Next
-                        </button>
+                        </button></a>
                     </div>
                 </section>
  

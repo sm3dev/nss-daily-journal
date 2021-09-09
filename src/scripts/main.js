@@ -9,7 +9,7 @@ const showEntryList = () => {
   });
 }
 
-// const applicationElement = document.querySelector(".main");
+const applicationElement = document.querySelector(".main");
 
 // applicationElement.addEventListener("click", (event) => {
 //   console.log("what was clicked", event.target);
@@ -18,9 +18,28 @@ const showEntryList = () => {
 //   }
 // });
 
+// The Edit button function is the next two functions
+applicationElement.addEventListener("click", event => {
+  event.preventDefault();
+  if (event.target.id.startsWith("edit")) {
+    const entryId = event.target.id.split("--")[1];
+    getSinglePost(entryId)
+      .then(response => {
+        showEdit(response);
+      })
+  }
+})
+
+const showEdit = (postObj) => {
+  const entryElement = document.querySelector(".entryForm");
+  entryElement.innerHTML = PostEdit(postObj);
+}
+
 const startDailyJournal = () => {
   showEntryList();
 
 }
+
+
 
 startDailyJournal();

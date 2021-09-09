@@ -22,10 +22,19 @@ const loggedInUser = {
       })
   }
 
-  // const getJournalEntries = () => {
-  //   return fetch("daily-journal.json")
-  //     .then(response => response.json())
-  //     .then((parsedData) => {
-  //       console.log(parsedData);
-  //     });
-  // };
+  // This method will retrieve a single post. This ensures we have the latest and greatest information from the database
+export const getSingleEntry = (entryId) => {
+  return fetch(`http://localhost:8888/entries/${entryId}`).then(response => response.json())
+}
+
+// This method will update a post in the database. We will use the database verb PUT in the fetch call. This does not create a new item. This replaces the data with the matching id.
+export const updateEntry = entryObj => {
+  return fetch(`http://localhost:8888/entries/${entryObj.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(entryObj)
+  }
+  ).then(response => response.json()).then(getEntries)
+}
