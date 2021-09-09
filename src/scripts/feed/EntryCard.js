@@ -1,5 +1,5 @@
 // This is taken from giffy and has to be modified
-export const Entry = (entryObj) => {
+export const EntryCard = (entryObj) => {
     return `
       <section class="post">
         <header>

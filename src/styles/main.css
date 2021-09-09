@@ -6,6 +6,8 @@
     --accent-color: #FA7E61;
     --primary-bg-color: #F7F5FB;
     --secondary-bg-color: #909CC2;
+    --primary-border-radius: 5px;
+    --round-border-radius: 50px
 }
 
 /* HTML Element styles ***********************/
@@ -41,7 +43,7 @@ label {
 }
 
 .header__logo {
-    border-radius: 50px;
+    border-radius: var(--round-border-radius);
 }
 
 /* Main ***********************************/
@@ -126,4 +128,114 @@ input#mood4 {
 /* Miscellaneous  ********************/
 .icon {
     max-width: 2em;
+}
+
+.input,
+.textarea {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.textarea {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: both;
+    min-height: 80px;
+    line-height: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .textarea[contenteditable]:empty::before {
+    content: "How you really feel";
+    color: gray;
+  }
+
+  #post-subject {
+    min-height: 1rem;
+    height: 1.2rem;
+    resize: none;
+}
+
+  p.remarks__block strong {
+      display: block;
+  }
+
+  label[for*="newJournalDate"] {
+    flex: 2;
+}
+
+input#newJournalDate {
+    flex: 1 1 150px;
+}
+
+#new-post__date-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.entry-add-entry-read__block > *{
+    padding: 1rem;
+}
+
+.block-style__button {
+    width: -webkit-fill-available;
+}
+
+button {
+    margin: .5em;
+    border-radius: var(--round-border-radius);
+}
+
+/* Journal Entry Container *********************** */
+.journal-entry__container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex: 1 auto;
+}
+
+.entry__card.entry__preview {
+    margin: .5rem;
+    padding: .5rem;
+    background: var(--secondary-bg-color);
+    flex: 0 1 300px;
+    border-radius: var(--primary-border-radius);
+    border: 1px solid #ffffff;
+    color: white;
+}
+
+.entry__card.mood-date__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hr--98 {
+    width: 98%;
 }
