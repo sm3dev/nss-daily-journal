@@ -1,8 +1,5 @@
 import { EntryList } from "./feed/EntryList.js";
-import {
-  getEntries,
-  getSingleEntry,
-} from "./data/DataManager.js";
+import { getEntries, getSingleEntry } from "./data/DataManager.js";
 import { entryViewer } from "./feed/EntryViewer.js";
 import { EntryNew } from "./feed/EntryNew.js";
 import { entryEdit } from "./feed/EntryEdit.js";
@@ -65,13 +62,18 @@ const showEdit = (entryObj) => {
   entryElement.innerHTML = entryEdit(entryObj);
 };
 
-applicationElement.addEventListener("click", event => {
+applicationElement.addEventListener("click", (event) => {
   event.preventDefault();
-  
-  if (event.target.id.startsWith("updateEntry"))
 
-})
+  if (event.target.id.startsWith("updateEntry")) {
+    const postId = event.target.id.split("--")[1];
 
+    // Collect all the details into an object
+    const dateCreated = document.querySelector("input[name='editJournalDate']").value;
+    const subject = document.querySelector("input[name='post-subject']").value;
+    const mood = document.querySelector("input[name='mood']:checked").value;
+  }
+});
 
 const startDailyJournal = () => {
   showEntryList();

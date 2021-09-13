@@ -46,7 +46,7 @@ return `<div id="edit-entry__form">
 
 <fieldset>
     <legend>Journal Text</legend>
-    <p><strong>Subject:</strong><textarea class="textarea" id="post-subject">${entryObj.subject}</textarea></p>
+    <p><strong>Subject:</strong><textarea class="textarea" id="post-subject" name="post-subject">${entryObj.subject}</textarea></p>
     <p class="remarks__block">
         <strong>Thoughts:</strong>
         <span class="textarea" role="textbox" name="post-message" id="post-message" contenteditable>${entryObj.message}</span></p>
