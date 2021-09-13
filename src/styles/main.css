@@ -104,6 +104,15 @@ label {
 }
 
 /* Viewer Section, Post Entry *************************** */
+
+.edit-mode {
+    outline: 4px solid red;
+    content: "Editing";
+    padding: .5em;
+    background: #ff000010;
+    outline-style: double;
+}
+
 .view-entry__wrapper {
     display: inline-flex;
     align-content: center;
@@ -128,9 +137,9 @@ label {
 
 /* This pointer-events: none declaration makes sure that no sub-elements of the article entry card have click events. This matters because it guarantees the article element will be the only thing clickable, so when I click an article, it goes to the Viewer section
 reference: https://css-tricks.com/slightly-careful-sub-elements-clickable-things/  */
-article.entry__card > * {
+/* article.entry__card > * {
     pointer-events: none;
-}
+} */
 .icon {
     max-width: 2em;
 }
@@ -216,7 +225,7 @@ button {
 .journal-entry__wrapper
  {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-evenly;

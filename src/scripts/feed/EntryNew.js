@@ -1,15 +1,14 @@
 export const EntryNew = () => {
-    return `
-    <h2 class="new-post-section__title">New Daily Journal</h2>
+    return `<h2 class="new-post-section__title">New Daily Journal</h2>
     <div id="new-entry__form">
     <fieldset id="new-post__date-block">
         <label for="newJournalDate"><strong>Date of Entry: </strong></label>
-        <input value="" type="date" name="newJournalDate" id="newJournalDate">
+        <input type="date" name="newJournalDate" id="newJournalDate">
     </fieldset>
     <fieldset>
         <legend>Mood</legend>
         <section class="mood-selector__block">
-            <div class="mood__selection selected">
+            <div class="mood__selection">
                 <input type="radio" name="mood" id="mood1" value="awesome" checked>
                 <label for="mood1">
                     <img id="mood1__image" class="mood-select-icon icon" src="images/mood-nailed-it-icon.png" alt="Awesome mood-choice__text">
@@ -48,6 +47,6 @@ export const EntryNew = () => {
             <span class="textarea" role="textbox" name="post-message" id="post-message" contenteditable></span></p>
     </fieldset>
     <button id="submit-new-post__button" class="block-style__button" type="button">Save Journal Entry</button>
-    <button id="cancel-new-post__button" class="block-style__button" type="button">Save Journal Entry</button>
+    <button id="cancel-new-post__button" class="block-style__button" type="button">Cancel</button>
     </div>`
 }

@@ -1,6 +1,5 @@
 import { convertDate } from "../helpers.js";
 
-
 export const EntryCard = (entryObj) => {
 
     const covertedEntryDate = convertDate(entryObj.dateCreated);

@@ -75,6 +75,26 @@
       "subject": "Creating the form that posts a post for GiffyGram",
       "message": "I definitely spent too much time on the forms and html in general. I meant to go a few more hours after class to get my journal entry list displaying. I didn't even get to the JS lol. Wow. I doing a lot HTML and alot of CSS for the new entry form and the entry list cards. I feel confident that I can take the code from giffygram and modify it to work for the journal, but still, I didn't touch it tonight. This day was good but not awesome.",
       "id": 4
+    },
+    {
+      "authorId": 1,
+      "dateCreated": 1631490374658,
+      "dateModified": 1631490374658,
+      "modifiedBy": 1,
+      "moodId": 3,
+      "subject": "A little Journal Work on a Sunday",
+      "message": "When I left off Friday, I was stuck on getting my new journal entry form to work. The date and the mood selectors stop being clickable. I have no idea what's wrong. I think I'm going to play around with the event listener. Maybe they're not all supposed to start with 'applicationElement'. I don't know. We'll see what happens. Since yesterday, I've been going back through the chapters on Event Listeners.\n My mood isn't good. I really wanted more time on the individual stuff before we got into another group project. I still don't have full functionality of Giffygram. It is what it is, but I'm confused about when to get help on Giffygram and Daily Journal. I'll ask and find out.",
+      "id": 5
+    },
+    {
+      "authorId": 1,
+      "dateCreated": 1631492972249,
+      "dateModified": 1631492972249,
+      "modifiedBy": 1,
+      "moodId": 1,
+      "subject": "My form buttons work when Main module turned off",
+      "message": "I commented out my main js script line in the index.html, and boom my datepicker and mood selector is working again. Something is broken in main.js OR something in there is causing my datepicker and mood radio buttons to not work. I suspect something in the event listener. I think I'll comment out one function at a time until I figure it out. Unfortunately, I'm not getting an error in the inspector to help narrow it down.",
+      "id": 6
     }
   ]
 }
