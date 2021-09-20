@@ -17,15 +17,45 @@
         </section>
 
     </header>
+    <section class="mood-selector__block">
+        <div class="mood__selection">
+                <input type="radio" id="mood1" name="mood" value="mood1" checked>
+                <label for="mood1">Awesome</label>
 
-    <main class="main">
+                <img src="images/mood-nailed-it-icon.png" class="mood-select-icon icon" alt="Awesome mood">
+                <p class="mood-choice__text">Awesome</p>
+        </div>
+        <div class="mood__selection">
+                <input type="radio" id="mood2" name="mood" value="mood2">
+                <label for="mood2">Good</label>
+
+                <img src="images/mood-good-icon.png" class="mood-select-icon icon" alt="Good mood">
+                <p class="mood-choice__text">Good</p>
+        </div>
+        <div class="mood__selection">
+                <input type="radio" id="mood3" name="mood" value="mood3">
+                <label for="mood3">Meeeh</label>
+                
+                <img src="images/mood-meeeh-icon.png" class="mood-select-icon icon" alt="OK mood">
+                <p class="mood-choice__text">Meeeh</p>
+        </div>
+        <div class="mood__selection">
+                <input type="radio" id="mood4" name="mood" value="mood4">
+                <label for="mood4">Awesome</label>
+                
+                <img src="images/mood-bad-icon.png" class="mood-select-icon icon" alt="Bad mood mood-choice__text">
+                <p class="mood-choice__text">Bad</p>
+        </div>        
+    </section>
+
+    <section id="form-content__container">
         <section class="entry-add-entry-read__block">
             <!-- reference for responsive,full-width textarea input fields: https://css-tricks.com/auto-growing-inputs-textareas/ -->
-            <section class="new-entry-form__block">
+            <section id="new-entry-form__block">
                 <!-- I've add the new entry form back in the HTML because the Date and mood fields would work when I loaded the form from the EntryNew.js file. Couldn't figure out how to fix. Need help. -->
 
             </section>
-            <section class="view-entry__block">
+            <section id="view-entry__block">
                 <h2 class="viewer-post-section__title">Journal Viewer</h2>
 
                 <section class="view-entry__wrapper">
@@ -36,7 +66,9 @@
  
             </section>
         </section>
+    </section>
 
+    <main class="main">
         <section class="journal-entry__container">
             <h2 class="journal-entry__list-title">Journal Entries</h2>
             <section class="journal-entry__wrapper">

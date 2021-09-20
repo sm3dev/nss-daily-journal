@@ -11,7 +11,7 @@ import { entryEdit } from "./feed/EntryEdit.js";
 
 // Add the new Entry form template to the DOM
 const showEntryForm = () => {
-  const entryElement = document.querySelector(".new-entry-form__block");
+  const entryElement = document.querySelector("#new-entry-form__block");
   entryElement.innerHTML = EntryNew();
 };
 
@@ -26,7 +26,7 @@ const showEntryList = () => {
 const applicationElement = document.querySelector(".main");
 
 // This is the new entry form element selector
-const newEntryFormElement = document.querySelector(".new-entry-form__block");
+const newEntryFormElement = document.querySelector("#form-content__container");
 
 applicationElement.addEventListener("click", (event) => {
   console.log("what was clicked", event.target);
@@ -109,7 +109,7 @@ newEntryFormElement.addEventListener("click", (event) => {
 
     newPost(postObject).then((dbResponse) => {
       showEntryList();
-    }).then(console.log("this is the mood information: ", mood));
+    }).then(console.log("this is the mood information: ", mood)).then(showEntryForm());
   }
 });
 
