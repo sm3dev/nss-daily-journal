@@ -95,6 +95,89 @@
       "subject": "My form buttons work when Main module turned off",
       "message": "I commented out my main js script line in the index.html, and boom my datepicker and mood selector is working again. Something is broken in main.js OR something in there is causing my datepicker and mood radio buttons to not work. I suspect something in the event listener. I think I'll comment out one function at a time until I figure it out. Unfortunately, I'm not getting an error in the inspector to help narrow it down.",
       "id": 6
+    },
+    {
+      "authorId": 1,
+      "dateCreated": 1631654219609,
+      "dateModified": 1631654219609,
+      "modifiedBy": 1,
+      "moodId": 3,
+      "subject": "Holiday Road, take me home to a place I belong",
+      "message": "Today was, as Russians say in American-made movies, sh*t. Poor Bryan really put in time with us to get the dropdowns and preview section working. We still have one person's module to sort out tomorrow morning. The Holiday Road project introduced more concepts than I was and my teammates could figure out how to do. We got the modules for template littorals to work well enough. We just had to get help with getting them to spit out what we needed. This project felt like a very huge leap from giffy gram. On paper, it seemed easy enough, and of course the styling and layout are the most simple pieces. At the end of the day, I feel like crap mentally, and I don't want to look at VS Code for a few hours. That's unfortunate because I'm still using Postman to submit my journal entries. I want to be clear: I feel very accomplished. The team and I agreed that today felt way too difficult. With that, my mood is right in the middle of good and terrible -- meeeh. To go out on a slightly positive note, what we learned today will help me sort out where I'm stuck in my journal. That's worth two ethnic thumbs up!👍🏾👍🏾.",
+      "id": 7
+    },
+    {
+      "authorId": 1,
+      "dateCreated": 1632166945712,
+      "moodId": "",
+      "subject": "test with year 0011",
+      "dateModified": 1632166945712,
+      "modifiedBy": 1,
+      "id": 8
+    },
+    {
+      "authorId": 1,
+      "dateCreated": 1632167014653,
+      "moodId": "",
+      "subject": "test with year 0011",
+      "dateModified": 1632167014653,
+      "modifiedBy": 1,
+      "id": 9
+    },
+    {
+      "authorId": 1,
+      "dateCreated": 1632167015897,
+      "moodId": "",
+      "subject": "test with year 0011",
+      "dateModified": 1632167015897,
+      "modifiedBy": 1,
+      "id": 10
+    },
+    {
+      "authorId": 1,
+      "dateCreated": 1632167056912,
+      "moodId": "",
+      "subject": "",
+      "dateModified": 1632167056912,
+      "modifiedBy": 1,
+      "id": 11
+    },
+    {
+      "authorId": 1,
+      "dateCreated": 1632167066314,
+      "moodId": "",
+      "subject": "",
+      "dateModified": 1632167066314,
+      "modifiedBy": 1,
+      "id": 12
+    },
+    {
+      "authorId": 1,
+      "dateCreated": 1632167181495,
+      "moodId": "",
+      "subject": "",
+      "dateModified": 1632167181495,
+      "modifiedBy": 1,
+      "id": 13
+    },
+    {
+      "authorId": 1,
+      "dateCreated": 1632167282133,
+      "moodId": "",
+      "subject": "test line",
+      "dateModified": 1632167282133,
+      "modifiedBy": 1,
+      "id": 14
+    },
+    {
+      "authorId": 1,
+      "dateCreated": 1632167748393,
+      "moodId": "",
+      "subject": "Subject works because it's an input\nsubject works becuase it's an input",
+      "message": "fbghjhktrgefwds NOTHR TST FOR MESSAGE CONTENT",
+      "dateModified": 1632167748393,
+      "modifiedBy": 1,
+      "id": 15
     }
   ]
 }
