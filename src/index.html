@@ -7,6 +7,7 @@
     <title>Daily Journal || Michael Wright, C51</title>
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="shortcut icon" href="/images/SM3dev-angleBrackets-CRT-logo-wh-BG-favicon-1280px.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9e2696ba94.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -18,14 +19,14 @@
 
     </header>
 
-    <main class="main">
+    <section id="form-content__container">
         <section class="entry-add-entry-read__block">
             <!-- reference for responsive,full-width textarea input fields: https://css-tricks.com/auto-growing-inputs-textareas/ -->
-            <section class="new-entry-form__block">
+            <section id="new-entry-form__block">
                 <!-- I've add the new entry form back in the HTML because the Date and mood fields would work when I loaded the form from the EntryNew.js file. Couldn't figure out how to fix. Need help. -->
 
             </section>
-            <section class="view-entry__block">
+            <section id="view-entry__block">
                 <h2 class="viewer-post-section__title">Journal Viewer</h2>
 
                 <section class="view-entry__wrapper">
@@ -36,7 +37,9 @@
  
             </section>
         </section>
+    </section>
 
+    <main class="main">
         <section class="journal-entry__container">
             <h2 class="journal-entry__list-title">Journal Entries</h2>
             <section class="journal-entry__wrapper">

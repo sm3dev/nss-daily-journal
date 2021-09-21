@@ -30,7 +30,6 @@ export const getEntries = () => {
     .then((response) => response.json())
     .then((parsedResponse) => {
       entryCollection = parsedResponse;
-      console.log("Journal entry collection is this:", entryCollection);
       return parsedResponse;
     });
 };
