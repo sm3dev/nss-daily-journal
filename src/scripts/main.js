@@ -27,7 +27,7 @@ const formElement = document.querySelector("#form-content__container");
 
 // Create new post and Save to database
 formElement.addEventListener("click", (event) => {
-  event.preventDefault();
+  // event.preventDefault();
 
   if (event.target.id === "submit-new-post__button") {
     // collect the input values into one object to be put into the database
@@ -67,7 +67,7 @@ applicationElement.addEventListener("click", (event) => {
 // set an eventlistener for each Journal Entry card that displays the selected post in the element section.view-entry__wrapper
 // This function will need to display a single entry
 applicationElement.addEventListener("click", (event) => {
-  event.preventDefault();
+  // event.preventDefault();
   if (event.target.id.startsWith("entry-card")) {
     const entryId = event.target.id.split("--")[1];
     getSingleEntry(entryId).then((response) => {
@@ -83,7 +83,7 @@ const showViewer = (entryObj) => {
 
 // This lists for a click on the Edit button
 applicationElement.addEventListener("click", (event) => {
-  event.preventDefault();
+  // event.preventDefault();
   if (event.target.id.startsWith("edit")) {
     const entryId = event.target.id.split("--")[1];
     getSingleEntry(entryId).then((response) => {
@@ -100,7 +100,7 @@ const showEdit = (entryObj) => {
 
 // The edit function that writes the clicked on article and displays it in the Viewer
 applicationElement.addEventListener("click", (event) => {
-  event.preventDefault();
+  // event.preventDefault();
 
   if (event.target.id.startsWith("updateEntry")) {
     const postId = event.target.id.split("--")[1];

@@ -38,7 +38,7 @@
   "entries": [
     {
       "id": 1,
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1630601178083,
       "dateModified": 1630601178083,
       "modifiedBy": 1,
@@ -47,7 +47,7 @@
       "message": ""
     },
     {
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1630618339352,
       "dateModified": 1630618339352,
       "modifiedBy": 1,
@@ -57,7 +57,7 @@
       "id": 2
     },
     {
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1631115891937,
       "dateModified": 1631115891937,
       "modifiedBy": 1,
@@ -67,7 +67,7 @@
       "id": 3
     },
     {
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1631159915184,
       "dateModified": 1631159915184,
       "modifiedBy": 1,
@@ -77,7 +77,7 @@
       "id": 4
     },
     {
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1631490374658,
       "dateModified": 1631490374658,
       "modifiedBy": 1,
@@ -87,7 +87,7 @@
       "id": 5
     },
     {
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1631492972249,
       "dateModified": 1631492972249,
       "modifiedBy": 1,
@@ -97,7 +97,7 @@
       "id": 6
     },
     {
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1631654219609,
       "dateModified": 1631654219609,
       "modifiedBy": 1,
@@ -107,7 +107,7 @@
       "id": 7
     },
     {
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1632166945712,
       "moodId": "",
       "subject": "test with year 0011",
@@ -116,7 +116,7 @@
       "id": 8
     },
     {
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1632167014653,
       "moodId": "",
       "subject": "test with year 0011",
@@ -125,7 +125,7 @@
       "id": 9
     },
     {
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1632167015897,
       "moodId": "",
       "subject": "test with year 0011",
@@ -134,7 +134,7 @@
       "id": 10
     },
     {
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1632167056912,
       "moodId": "",
       "subject": "",
@@ -143,7 +143,7 @@
       "id": 11
     },
     {
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1632167066314,
       "moodId": "",
       "subject": "",
@@ -152,7 +152,7 @@
       "id": 12
     },
     {
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1632167181495,
       "moodId": "",
       "subject": "",
@@ -161,7 +161,7 @@
       "id": 13
     },
     {
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1632167282133,
       "moodId": "",
       "subject": "test line",
@@ -170,7 +170,7 @@
       "id": 14
     },
     {
-      "authorId": 1,
+      "userId": 1,
       "dateCreated": 1632167748393,
       "moodId": "",
       "subject": "Subject works because it's an input\nsubject works becuase it's an input",

@@ -8,8 +8,7 @@ export const EntryNew = () => {
     <legend>Journal Date</legend>
     <p><i class="far fa-clock fa-2x"></i><strong> ${rightNow}</strong></p>
      <label for="newJournalDate">Change Date:</label>
-
-            <input type="date" name="newJournalDate" id="newJournalDate" value="${Date.now()}">
+    <input type="date" name="newJournalDate" id="newJournalDate" value="${Date.now()}">
     </fieldset>
     <fieldset id="mood-selector__block">
         <legend>Your Mood</legend>
