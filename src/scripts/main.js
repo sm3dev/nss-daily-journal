@@ -33,13 +33,13 @@ formElement.addEventListener("click", (event) => {
     // collect the input values into one object to be put into the database
     const subject = document.querySelector("textarea[id='post-subject']").value;
     const message = document.querySelector("span[id='post-message']").innerText;
-    const mood = document.querySelector("input[name='mood']").value;
+    const mood = document.querySelector("select[name='moods']").value;
 
     // create the post object with the DateCreated date to be set with Date.now()
     const postObject = {
-      authorId: getLoggedInUser().id,
+      userId: getLoggedInUser().id,
       dateCreated: Date.now(),
-      moodId: mood,
+      moodId: parseInt(mood),
       subject: subject,
       message: message,
       dateModified: Date.now(),
@@ -51,6 +51,7 @@ formElement.addEventListener("click", (event) => {
         showEntryList();
       })
       .then(console.log("this is the mood information: ", mood));
+      showEntryForm();
   }
 });
 

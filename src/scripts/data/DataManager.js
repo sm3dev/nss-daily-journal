@@ -36,7 +36,7 @@ export const getEntries = () => {
 
 // This method will retrieve a single post. This ensures we have the latest and greatest information from the database
 export const getSingleEntry = (entryId) => {
-  return fetch(`http://localhost:8888/entries/${entryId}`).then((response) =>
+  return fetch(`http://localhost:8888/entries/${entryId}?_expand=mood`).then((response) =>
     response.json()
   );
 };

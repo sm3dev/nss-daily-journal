@@ -178,6 +178,36 @@
       "dateModified": 1632167748393,
       "modifiedBy": 1,
       "id": 15
+    },
+    {
+      "authorId": 1,
+      "dateCreated": 1632503388701,
+      "moodId": "awesome",
+      "subject": "test",
+      "message": "sgdhfjgbhnm,",
+      "dateModified": 1632503388701,
+      "modifiedBy": 1,
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "dateCreated": 1632504009424,
+      "moodId": 3,
+      "subject": "Test of Mood giving ID as an integer",
+      "message": "Test of Mood giving ID as an integer Test of Mood giving ID as an integerTest of Mood giving ID as an integerTest of Mood giving ID as an integerTest of Mood giving ID as an integerTest of Mood giving ID as an integerTest of Mood giving ID as an integer",
+      "dateModified": 1632504009424,
+      "modifiedBy": 1,
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "dateCreated": 1632504318499,
+      "moodId": 1,
+      "subject": "I think I got my journal posting from the web page",
+      "message": "This might be it. Everything is wired up. I might be done posting my journal entries from Postman - finally! The moods selection was holding me back as well as the date time. This is starting to feel like a commit message.",
+      "dateModified": 1632504318499,
+      "modifiedBy": 1,
+      "id": 18
     }
   ]
 }

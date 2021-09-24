@@ -7,17 +7,16 @@ export const EntryNew = () => {
     <fieldset id="new-post__date-block">
     <legend>Journal Date</legend>
     <p><i class="far fa-clock fa-2x"></i><strong> ${rightNow}</strong></p>
-     <label for="newJournalDate">Change Date:</label>
-    <input type="date" name="newJournalDate" id="newJournalDate" value="${Date.now()}">
+     <p><label for="newJournalDate"><em>Change Date Feature Coming Soon</em></label></p>
+    <input type="hidden" name="newJournalDate" id="newJournalDate" value="">
     </fieldset>
     <fieldset id="mood-selector__block">
         <legend>Your Mood</legend>
-        <select name="moods" id="selected__mood">
-                <option value="">--Choose Your Mood--</option>
-                <option value="awesome">Awesome</option>
-                <option value="good">Good</option>
-                <option value="meeh">Meeh</option>
-                <option value="bad">Bad</option>
+        <select name="moods" id="selected__mood" size="5">
+                <option value="1">Awesome</option>
+                <option value="2">Good</option>
+                <option value="3">Meeh</option>
+                <option value="4">Bad</option>
         </select>
         <section class="current-mood__icon"><img src="/images/" alt="current mood"></section>
 
