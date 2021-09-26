@@ -208,6 +208,26 @@
       "dateModified": 1632504318499,
       "modifiedBy": 1,
       "id": 18
+    },
+    {
+      "userId": 1,
+      "dateCreated": 1632617375901,
+      "moodId": 2,
+      "subject": "Geeking out about learning React after checking out Material UI",
+      "message": "Today, I checked out a couple videos on for extensions and settings in VS Code. Then, I decided to refer to some notes I made from C49's Demo Day. I was curious about the UI design frameworks mentioned by a handful of the students, and I went down a rabbit hole. CSS frameworks I've been curious about were Tailwind and Bulma CSS -- the latter was used by a C49 student in their program. A couple of things didn't sit well with me about the CSS libraries: neither are using logical properties for significant sizing properties like margin, padding, and border. For example, the frameworks might use class names like \"ml\" for margin-left or \"mx\" for both margin-left and margin-right. But there is not logical property classes that would say something like \"mis\" for margin-inline-start or \"mi\" for margin-inline. That bugs me and makes them feel dated. One cool thing I liked about Tailwind is that there is a feature where you can \"turn-off\" the margin features, so the margin classes won't be recognized if they're written into your HTML.\nAfter that, I started checking out Material UI (MUI) -- a UI library for react and its components. I could be using those terms incorrectly. We literally talked about React for the first time Friday. Anyway, I'm gonna like using Material UI. Probably the coolest part is that MUI has an Adobe XD plugin. I f**kin love Adobe XD so much. If a job exists where I could do my entire workflow inside the application, I would consider going back to the workforce full-time -- no BS.",
+      "dateModified": 1632617375901,
+      "modifiedBy": 1,
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "dateCreated": 1632617625875,
+      "moodId": 3,
+      "subject": "testing the line break",
+      "message": "egrBWSR2Fgbtw32few&#13;&#10; Testing the line break",
+      "dateModified": 1632617625875,
+      "modifiedBy": 1,
+      "id": 20
     }
   ]
 }
