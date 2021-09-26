@@ -228,6 +228,106 @@
       "dateModified": 1632617625875,
       "modifiedBy": 1,
       "id": 20
+    },
+    {
+      "userId": 1,
+      "dateCreated": 1632618580987,
+      "moodId": 4,
+      "subject": "Test number 2",
+      "message": "Test number 2.\nThis is the second line.\nLet's see what happens.",
+      "dateModified": 1632618580987,
+      "modifiedBy": 1,
+      "id": 21
+    },
+    {
+      "userId": 1,
+      "dateCreated": 1632618643873,
+      "moodId": 2,
+      "subject": "test number 3",
+      "message": "This is the first line. Let's see what happens.\n\n\n\nffffffff\nthis is a line made with just hitting enter",
+      "dateModified": 1632618643873,
+      "modifiedBy": 1,
+      "id": 22
+    },
+    {
+      "userId": 1,
+      "dateCreated": 1632618742307,
+      "moodId": 1,
+      "subject": "tetst nymber 4",
+      "message": "hre we go\nthis is the next line.\nThis is also a next line.",
+      "dateModified": 1632618742307,
+      "modifiedBy": 1,
+      "id": 23
+    },
+    {
+      "userId": 1,
+      "dateCreated": 1632619105091,
+      "moodId": 2,
+      "subject": "test 5",
+      "message": "OK this is line 1\nThis is line two.",
+      "dateModified": 1632619105091,
+      "modifiedBy": 1,
+      "id": 24
+    },
+    {
+      "userId": 1,
+      "dateCreated": 1632619407859,
+      "moodId": 2,
+      "subject": "test 6",
+      "message": "line 1\nLine number\n\n\nLine number 4!",
+      "dateModified": 1632619407859,
+      "modifiedBy": 1,
+      "id": 25
+    },
+    {
+      "userId": 1,
+      "dateCreated": 1632619468685,
+      "moodId": 1,
+      "subject": "Test 7",
+      "message": "line 1\nline 2.\n\n\nline 4!!!",
+      "dateModified": 1632619468685,
+      "modifiedBy": 1,
+      "id": 26
+    },
+    {
+      "userId": 1,
+      "dateCreated": 1632619623963,
+      "moodId": 1,
+      "subject": "test 8",
+      "message": "this is line 1\nthis is line 2\n\n\nthis is line 4!",
+      "dateModified": 1632619623963,
+      "modifiedBy": 1,
+      "id": 27
+    },
+    {
+      "userId": 1,
+      "dateCreated": 1632619757345,
+      "moodId": 3,
+      "subject": "test 9",
+      "message": "This is to test if shift-return works. line 1\nline 2.\n\nLine 4",
+      "dateModified": 1632619757345,
+      "modifiedBy": 1,
+      "id": 28
+    },
+    {
+      "userId": 1,
+      "dateCreated": 1632620228224,
+      "moodId": 1,
+      "subject": "Tsst 10",
+      "message": "line 1\nline 2. regular Enter\nline 3 regular Enter",
+      "dateModified": 1632620228224,
+      "modifiedBy": 1,
+      "id": 29
+    },
+    {
+      "userId": 1,
+      "dateCreated": 1632620346568,
+      "moodId": 3,
+      "subject": "test 11",
+      "message": "Line 1\nline 2 regular Return\n\n\nLine 4 REgular return",
+      "dateModified": 1632620346568,
+      "modifiedBy": 1,
+      "id": 30
     }
   ]
 }
