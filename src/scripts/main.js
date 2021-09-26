@@ -31,7 +31,10 @@ formElement.addEventListener("click", (event) => {
 
   if (event.target.id === "submit-new-post__button") {
     // collect the input values into one object to be put into the database
-    const subject = document.querySelector("textarea[id='post-subject']").value;
+    const subjectString = document.querySelector(
+      "textarea[id='post-subject']"
+    ).value;
+    const subject = subjectString.replace("\r\n", "<br>\r\n");
     const message = document.querySelector("span[id='post-message']").innerText;
     const mood = document.querySelector("select[name='moods']").value;
 
@@ -51,7 +54,7 @@ formElement.addEventListener("click", (event) => {
         showEntryList();
       })
       .then(console.log("this is the mood information: ", mood));
-      showEntryForm();
+    showEntryForm();
   }
 });
 
